@@ -6,6 +6,8 @@ This library can read and convert Vermintide 2 `.unit` files into an `.fbx` form
 
 The produced `.fbx` files are not guaranteed to be correct or work for all `.unit` files; there's definitely a few that it currently breaks on.
 
+Resulting `.fbx` files should have correct UVs, materials, vertex normals, and colors. Vertex weights should be mostly correct though resulting skeletons may be incorrect and miss a few bones.
+
 It also has some code for reading VT2 bundle files.
 
 The main meat of the code for `.unit` reading and conversion is in `Stingray\Resources\UnitAssimpSceneBuilder.cs` and the various serializers in `Stingray\Serialization\` and `Stingray\Resources\Serialization\`.
